@@ -1,0 +1,27 @@
+
+body {
+  background-color: #E8ECEF;
+}
+
+.centered {
+    padding-top: 200px;
+    text-align: center;
+}
+
+.secret-text {
+  text-align: center;
+  font-size: 2rem;
+  color: #fff;
+  background-color: #0a5b29;
+}
+
+.del-update-btn {
+  text-decoration: none;
+  background-color: #E8ECEF;
+  border: none;
+  border-radius: 3px;
+  padding: 4px;
+  font-family: sans-serif;
+  font-size: 1vw;
+  font-weight: bold;
+}

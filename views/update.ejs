@@ -1,0 +1,31 @@
+<%- include('partials/header') %>
+
+  <div class="container">
+    <div class="jumbotron centered">
+      <i class="fas fa-key fa-6x"></i>
+      <h1 class="display-3">Update Secrets</h1>
+      <p class="secret-text">Don't keep your secrets, share them anonymously!</p>
+
+      <%if(main.length > 0){%>
+       <% main.forEach(x=>{%>
+        <form action="/update" method="POST">
+          <input type="hidden" name="_id" value="<%= x._id %>">
+           
+          
+          <div class="form-group">
+            <input type="text" class="form-control text-center" name="secret" placeholder="What's your secret?"
+            value="<%= x.secret %>">
+          </div>
+          <button type="submit" class="btn btn-dark" value="<%=x._id%>" name="updatebtn">Update</button>
+          <br><br>
+        </form>
+         <%})%>
+         
+  
+      <%}%>
+
+     
+      
+    </div>
+  </div>
+  <%- include('partials/footer') %>
